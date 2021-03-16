@@ -1,0 +1,1 @@
+export const LOCALSTORAGE_ACCESS_TOKEN = "access_token"
