@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet-async"
-import rundayLogo from "../images/runday_logo.svg"
+import rundayLogo from "../images/runallday_logo.svg"
 import { gql, useMutation } from "@apollo/client";
 import { useForm } from "react-hook-form"
 import { FormError } from "src/Components/form-error";
@@ -39,7 +39,7 @@ export const CreateAccount = () => {
         if (ok) {
             // redirect to login
             alert("Account Created! Log in now!")
-            history.push("/login")
+            history.push("/")
         }
     }
     const [createUserMutation, { loading, data: createUserMutationResult }] = useMutation<
@@ -124,7 +124,7 @@ export const CreateAccount = () => {
                 </form>
                 <div>
                     Already have an account?&nbsp;
-                    <Link to="/login"
+                    <Link to="/"
                         className="text-lime-600 hover:underline">
                         Log in Now.
                     </Link>

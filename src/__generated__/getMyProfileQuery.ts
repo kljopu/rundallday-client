@@ -12,6 +12,7 @@ export interface getMyProfileQuery_getMyProfile {
   id: string;
   email: string;
   name: string;
+  isVerified: boolean;
 }
 
 export interface getMyProfileQuery {

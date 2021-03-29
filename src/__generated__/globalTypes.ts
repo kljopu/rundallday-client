@@ -19,6 +19,10 @@ export interface CreateUserInput {
   profileImage?: string | null;
 }
 
+export interface VerifyEmailInput {
+  code: string;
+}
+
 //==============================================================
 // END Enums and Input Objects
 //==============================================================

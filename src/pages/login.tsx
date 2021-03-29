@@ -7,7 +7,7 @@ import {
     loginMutation,
     loginMutationVariables
 } from "src/__generated__/loginMutation";
-import rundayLogo from "../images/runday_logo.svg"
+import rundayLogo from "../images/runallday_logo.svg"
 import { Button } from "src/Components/button";
 import { Link } from "react-router-dom";
 import { isLoggedInVar, authTokenVar } from "src/appolo";
@@ -62,6 +62,7 @@ export const Login = () => {
             })
         }
     }
+
     return (
         <div className="h-screen flex items-center flex-col mt-10 lg:mt-28">
             <Helmet>
